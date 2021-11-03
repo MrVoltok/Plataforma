@@ -1,0 +1,14 @@
+.home_content{
+    color: #fcfff5;
+    position: absolute;
+    height: 100%;
+    width: 84%;
+    left: 16vw;
+    border: 1px solid red;
+}
+
+.home_content .text{
+    font-size: 25px;
+    font-weight: 500;
+    color: #1d1b31;
+}
