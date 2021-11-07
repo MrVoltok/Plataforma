@@ -13,21 +13,22 @@
     </div>
     <div class="create-group-section">
         <p>Crear un grupo</p>
-        <div class="create-group-form">
+	<form class="create-group-form" action="{{route('groups.store')}} " method ="POST">
+	   @csrf 
             <div class="field">
                 <p class="field-text">Nombre del grupo</p>
-                <input class="controls" type="text" name="group-name">
+                <input class="controls" type="text" name="name" id="name" required>
             </div>
             <div class="field">
                 <p class="field-text">Descripción</p>
-                <input class="controls" type="text" name="group-description">
+                <input class="controls" type="text" name="description" id="description" required>
             </div>
             <div class="field">
                 <p class="field-text">Área(s) de estudio</p>
                 <div class="field-options">
-                    <input class="controls" type="text" name="filter-group-area" placeholder="Área">
-                    <input class="controls" type="text" name="filter-group-area" placeholder="Ocupación">
-                    <input type="submit" value="Confirmar">
+                    <input class="controls" type="text" name="major" placeholder="Área" id ="major" required>
+                    <input class="controls" type="text" name="degree" placeholder="Ocupación" id = "degree" required>
+                   <!-- <input type="submit" value="Confirmar" required>-->
                 </div>
             </div>
             <!-- <div class="group-image">
@@ -36,7 +37,7 @@
             <div class="confirm-create-group">
                 <input type="submit" value="Crear grupo">
             </div>
-        </div>
+        </form>
     </div>
 </div>
 @endsection
