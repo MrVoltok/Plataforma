@@ -2,9 +2,10 @@
     display: block;
     position: absolute;
     top: 9vh;
-    width: 100%;
-    height: calc(100% - 9vh);
-    padding: 1vh 1vw;
+    width: calc(100% - 17vw);
+    height: calc(100% - 11vh);
+    margin: 1vh 1vw;
+    overflow-y: auto;
 }
 
 .create-group-section p{
@@ -44,13 +45,141 @@
     outline: none;
 }
 
+.field-specs{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.field-specs .sub-area{
+    position: relative;
+    width: 50%;
+    left: 5%;
+    margin-top: none;
+}
+
 .create-group-form .field-options{
-    display: flex;
-    height: 5vh;
+    display: block;
+    height: auto;
+    width: 20vw;
     align-items: center;
 }
 
+.field-options span{
+    display: block;
+    width: 100%;
+    padding: 5px 8px;
+    font-size: 18px;
+    border: 1px solid #003a8a;
+}
+
+.field-options span i{
+    position: absolute;
+    left: 18vw;
+    font-size: 20px;
+    font-weight: 550;
+    color: #003a8a;
+}
+
+.field-options span:hover ul{
+    display: block;
+    opacity: 1;
+}
+
+.field-options span ul{
+    display: none;
+    position: relative;
+    width: 20vw;
+    left: -0.7vw;
+    top: 1vh;
+    border: 1px solid #003a8a;
+    border-radius: 0 0 3px 3px;
+    cursor: pointer;
+}
+
+.field-options span ul li{
+    padding: 8px;
+    list-style: none;
+    color: #000;
+}
+
+.field-options span ul li:hover{
+    color: #fff;
+}
+
+.field-options span ul #libre:hover{
+    background: #0059D6;
+}
+
+.field-options span ul #salud:hover{
+    background: #0045a7;
+}
+
+.field-options span ul #exactas:hover{
+    background: #003F96;
+}
+
+.field-options span ul #naturales:hover{   
+    background: #002F70;
+}
+
+.field-options span ul #sociales:hover{
+    background: #001F4A;
+}
+
+.field-options span ul #humanidades:hover{
+    background: #000f24;
+}
+
+
+.tags ul{
+    overflow-y: auto;
+}
+
+.tags li{
+    list-style: none;
+    margin-bottom: 1vh;
+}
+
+.tags li p{
+    position: relative;
+    display: flex;
+    width: 15vw;
+    top: 0.5vh;
+    padding: 0.5vh;
+    margin-right: 1vw;
+    justify-content: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.tags #salud{
+    background: #003a8a;
+}
+
+.tags #exactas{
+    background: #0059D6;
+}
+
+.tags #naturales{
+    background: #2F5D9D;
+}
+
+.tags #sociales{
+    background: #407FD6;
+}
+
+.tags #humanidades{
+    background: #000f24;
+}
+
+.tags #libre{
+    background: #002457;
+}
+
 .create-group-form input[type="submit"]{
+    position: relative;
+    top: 1vh;
     height:5vh;
     width: auto;
     padding: 3px;

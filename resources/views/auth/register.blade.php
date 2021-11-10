@@ -11,12 +11,12 @@
             <input class="controls" type="email" name="email" id="correo" placeholder="Correo electrónico">
             <input class="controls" type="password" name="password" id="contraseña" placeholder="Contraseña">
             <input class="controls" type="password" name="password_confirmation" id="confirm_contraseña" placeholder="Confirme su Contraseña">
-            @error('password')
+            @error('name')
                 <div class="error_log" id="error_log">
                     {{$message}}
                 </div>
             @enderror
-            <center><button type="submit" id="register_user">Registrarse</button></center>
+            <center><button type="submit" id="register_user">Continuar</button></center>
             <center><p class="to_log"><a href="{{route('login.index')}}">Ya tengo una cuenta</a></p></center>
       </div>
     </div>

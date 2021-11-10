@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Validation\Validator;
 use App\Models\User;
 
 class RegisterController extends Controller{

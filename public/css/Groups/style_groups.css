@@ -21,6 +21,7 @@
 
 .teams-section .group-banner .banner-text{
     width: 70%;
+    font-weight: 600;
     font-size: 25px;
     font-family: 'Open Sans';
     color: #fff;
@@ -137,6 +138,7 @@
     width: 80%;
     height: 80%;
     border-radius: 50%;
+    background: #fff;
     border: 1px solid #142c4d;
 }
 

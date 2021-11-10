@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\GroupsController;
+use App\Http\Controllers\MessagesController;
+use App\Http\Controllers\ProfilePageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +20,7 @@ use App\Http\Controllers\GroupsController;
 
 // PAGINA PRINCIPAL
 Route::get('/', function () {
-    return view('home');
+    return view('Groups.homeGroup');
 })->middleware('auth');
 
 // INICIO DE SESION
@@ -42,6 +44,10 @@ Route::get('/register', [RegisterController::class, 'index'])
 Route::post('/register', [RegisterController::class, 'store'])
     ->name('register.store');
 
+// PERFIL DE USUARIO
+Route::get('/profile', [ProfilePageController::class, 'index'])
+    ->middleware('auth')
+    ->name('profilePage.index');
 
 // GRUPOS
 Route::get('/groups', [GroupsController::class, 'index'])
@@ -51,3 +57,8 @@ Route::get('/groups', [GroupsController::class, 'index'])
 Route::get('/groups/create-group', [GroupsController::class, 'create'])
     ->middleware('auth')
     ->name('groups.create');
+
+// MENSAJES
+Route::get('/messages', [MessagesController::class,'index'])
+    ->middleware('auth')
+    ->name('messages.index');
