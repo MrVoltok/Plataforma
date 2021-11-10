@@ -162,6 +162,11 @@ body{
   background: #002c69;
 }
 
+.profile a{
+  color: #fff;
+  text-decoration: none;
+}
+
 .profile_content .profile .profile_details{
   display: flex;
   align-items: center;
