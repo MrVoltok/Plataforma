@@ -25,13 +25,13 @@
             </li>
             <li>
                 <a href="{{route('groups.index')}}">
-                    <i class='bx bx-group'></i>
+                    <i class='bx bxs-group'></i>
                     <span class="links_name">Grupos</span>
                 </a>
             </li>
             <li>
-                <a href="mensajes.html">
-                    <i class='bx bx-message-dots' ></i>
+                <a href="{{route('messages.index')}}">
+                    <i class='bx bxs-message-dots' ></i>
                     <span class="links_name">Mensajes</span>
                 </a>
             </li>
@@ -49,14 +49,14 @@
             </li>
             <li>
                 <a href="foros.html">
-                    <i class='bx bx-comment-error'></i>
+                    <i class='bx bxs-message-error' ></i>
                     <span class="links_name">Foros</span>
                 </a>
             </li>
             <li>
                 <a href="apuntes.html">
-                    <i class='bx bx-edit-alt' ></i>
-                    <span class="links_name">Apuntes</span>
+                    <i class='bx bxs-edit-alt' ></i>
+                    <span class="links_name">Notas</span>
                 </a>
             </li>
             <li>
@@ -68,13 +68,15 @@
         </ul>
         <div class="profile_content">
             <div class="profile">
-                <div class="profile_details">
-                    <img src="/images/pexels-brenoanp-1136571.jpg" alt="">
-                    <div class="name_job">
-                        <div class="name"><b>{{auth()->user()->name}}</b></div>
-                        <div class="job">Ocupación</div>
+                <a href="{{route('profilePage.index')}}">
+                    <div class="profile_details">
+                        <img src="/images/vlll.jpg" alt="">
+                        <div class="name_job">
+                            <div class="name"><b>{{auth()->user()->name}}</b></div>
+                            <div class="job">Ocupación</div>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <a href="{{route('login.destroy')}}">
                     <i class='bx bx-log-out' id="log_out"></i>
                 </a>

@@ -1,0 +1,215 @@
+/*   LISTAS DE MENSAJES   */
+.chat-section{
+    position: absolute;
+    height: 100%;
+    width: 23vw;
+    left: 16vw;
+}
+
+.chat-section .chatlist-banner{
+    display: flex;
+    position: absolute;
+    color: #fff;
+    height: 9vh;
+    width: 100%;
+    padding: 10px 0;
+    justify-content: center;
+    text-align: center;
+    font-family: "Open sans";
+    font-size: 25px;
+    font-weight: 500;
+    pointer-events: none;
+    background: #003a8a;
+}
+
+.chat-section .list{
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: none;
+    height: calc(100% - 9vh);
+    top: 9vh;
+}
+
+.chat-section .list li{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.5vh 0.5vw;
+    height: 10vh;
+    background: #fff;
+    list-style: none;
+}
+
+.chat-section .list li:hover{
+    background: #142c4d;
+    cursor: pointer;
+}
+
+.chat-section .list img{
+    position: relative;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.chat-section .chat-miniDetails{
+    position: relative;
+    width: 100%;
+    margin: 0 0.5vw;
+}
+
+.chat-section .list li p{
+    font-family: 'Open sans';
+    font-size: 14px;
+    color: #1d1d1d;
+}
+
+.list li .chat-miniDetails .chat-usernameSnd{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.chat-section .list li:hover p{   
+    color: #fff;
+}
+
+/*   ENVIO Y RECIBO DE MENSAJES   */
+.chat-area{
+    position: absolute;
+    height: 100%;
+    width: 61vw;
+    left: 39vw;
+}
+
+.chat-area .chat-profileBanner{
+    background: #003a8a;
+    color: #fff;
+    position: absolute;
+    height: 9vh;
+    width: 100%;
+    padding: 1vh 1vw;
+    align-items: center;
+    display: flex;
+    text-align: left;
+    font-family: "Open sans";
+    font-size: 25px;
+    font-weight: 600;
+    pointer-events: none;
+    border-bottom: 2px solid #142c4d;
+    border-left: 1px solid #142c4d;
+}
+
+.chat-area .chat-profileBanner img{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.chat-area .chat-profileBanner p{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1vh 1vw;
+}
+
+.chat-area .chat-boxes{
+    position: relative;
+    overflow-y: auto;
+    overflow-x: none;
+    margin-top: 9vh;
+    height: 78vh;
+    width: 100%;
+    color: black;
+    background: #fff;
+    border-left: 1px solid #969696;
+    padding: 10px;
+}
+
+.chat-area .chat-boxes .received{
+    margin-top: 1vh;
+    list-style: none;
+    position: relative;
+    padding: 1vh 1vw;
+    height: auto;
+    width: 25vw;
+    border-radius: 6px 6px 6px 0;
+    background: #142c4d;
+}
+
+.chat-area .user-message{
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.chat-area .chat-boxes .sended{
+    left: 33vw;
+    margin-top: 1vh;
+    list-style: none;
+    position: relative;
+    padding: 5px;
+    height: auto;
+    width: 25vw;
+    border-radius: 6px 6px 0 6px;
+    background: #d7edff;
+}
+
+.chat-area .text-message{
+    font-family: sans-serif;
+    color: #1d1d1d;
+    font-size: 14px;
+}
+
+.chat-area .text-messageR{
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 14px;
+}
+
+.chat-area .isTyping{
+    background: #fff;
+    padding-left: 10px;
+    height: 3.8vh;
+    border-left: 1px solid #969696;
+}
+
+.chat-area .isTyping .isTyping-box{
+    height: 100%;
+    width: 12vw;
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    background: #142c4d;
+}
+
+.chat-area .isTyping .isTyping-box p{
+    color: #fff;
+}
+
+.chat-area .text-box{
+    padding: 2vh 10vh;
+    position: relative;
+    height: 9.2vh;
+    width: 100%;
+    background: #c5c5c5;
+    border-top: 1px solid #969696;
+    border-left: 1px solid #969696;
+}
+
+.chat-area input{
+    position: relative;
+    width: 52vw;
+    height: 100%;
+    padding-left: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #3b3b3b;
+    border: 1px solid #969696;
+}
+
+.chat-area input[type="text"]:focus{
+    border: 1px solid #969696;
+    outline: none;
+}
