@@ -29,7 +29,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .profile-additional-details .profile-mainDetails{
     position: relative;
     display: block;
-    height: 25%;
+    height: 17%;
     padding: 1vh 1vw;
 }
 
@@ -57,7 +57,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .profile-additional-details .titles{
     font-weight: 600;
-    font-size: 24px;
+    font-size: 21px;
     color: #003a8a;
 }
 
@@ -104,8 +104,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .profile-currentGroups ul li{
     list-style: none;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 600;
-    padding: 1vh;
+    padding: 1vh 0;
     cursor: pointer;
 }

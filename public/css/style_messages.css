@@ -126,7 +126,7 @@
     padding: 10px;
 }
 
-.chat-area .chat-boxes .received{
+.chat-boxes .received{
     margin-top: 1vh;
     list-style: none;
     position: relative;
@@ -137,14 +137,14 @@
     background: #142c4d;
 }
 
-.chat-area .user-message{
+.chat-boxes .user-message{
     font-size: 15px;
     font-weight: 400;
     color: #fff;
 }
 
-.chat-area .chat-boxes .sended{
-    left: 33vw;
+.chat-boxes .sended{
+    left: 58%;
     margin-top: 1vh;
     list-style: none;
     position: relative;
@@ -155,7 +155,7 @@
     background: #d7edff;
 }
 
-.chat-area .text-message{
+.text-message{
     font-family: sans-serif;
     color: #1d1d1d;
     font-size: 14px;
@@ -187,17 +187,16 @@
     color: #fff;
 }
 
-.chat-area .text-box{
+.text-box{
     padding: 2vh 10vh;
     position: relative;
     height: 9.2vh;
     width: 100%;
     background: #c5c5c5;
     border-top: 1px solid #969696;
-    border-left: 1px solid #969696;
 }
 
-.chat-area input{
+.text-box input{
     position: relative;
     width: 52vw;
     height: 100%;

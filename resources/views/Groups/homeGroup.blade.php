@@ -20,8 +20,8 @@
         <p class="personal-groupsT">Mis grupos</p>
         <!-- <i class='bx bx-chevron-down'></i> -->
     </div>
-    <div class="group-boxes">
-        <div class="team">
+    <ul class="group-boxes">
+        <li class="team">
             <div class="team-image">
                 <img src="/images/img_groups/brain-g48cd36ed5_640.png" alt="">
             </div>
@@ -31,19 +31,21 @@
                     <p>Grupo de investigación</p>
                 </div>
             </div> 
-        </div>
-        <div class="team">
-            <div class="team-image">
-                <img src="/images/img_groups/code-gb630950e3_640.png" alt="">
-            </div>
-            <div class="team-info">
-                <div class="info">
-                    <p>Algoritmos</p>
-                    <p>Grupo de investigación</p>
+        </li>
+        <li class="team">
+            <a href="{{route('ingroup.index')}}">
+                <div class="team-image">
+                    <img src="/images/img_groups/code-gb630950e3_640.png" alt="">
                 </div>
-            </div>
-        </div>
-        <div class="team">
+                <div class="team-info">
+                    <div class="info">
+                        <p>Algoritmos</p>
+                        <p>Grupo de investigación</p>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="team">
             <div class="team-image">
                 <img src="/images/img_groups/naranja.jpg" alt="">
             </div>
@@ -53,8 +55,8 @@
                     <p>Grupo de investigación</p>
                 </div>
             </div>
-        </div>
-        <div class="team">
+        </li>
+        <li class="team">
             <div class="team-image">
                 <img src="/images/img_groups/azteca.png" alt="">
             </div>
@@ -64,8 +66,8 @@
                     <p>Grupo de investigación</p>
                 </div>
             </div>
-        </div>
-        <div class="team">
+        </li>
+        <li class="team">
             <div class="team-image">
                 <img src="/images/img_groups/corazon.png" alt="">
             </div>
@@ -75,7 +77,7 @@
                     <p>Grupo de investigación</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
 </div>  
 @endsection

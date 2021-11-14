@@ -117,11 +117,16 @@
     grid-template-rows: 40% 40%;
 }
 
+.group-boxes a{
+    text-decoration: none;
+}
+
 .teams-section .group-boxes .team{
     margin: 5px 7px 5px 7px;
     border-radius: 5px;
     border: 1px solid #142c4d;
     cursor: pointer;
+    list-style: none;
 }
 
 .teams-section .team-image{
@@ -138,6 +143,7 @@
     height: 80%;
     border-radius: 50%;
     border: 1px solid #142c4d;
+    background: #fff;
 }
 
 .teams-section .team-info{
