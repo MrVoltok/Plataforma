@@ -72,9 +72,8 @@
                     <div class="profile_details">
                         <img src="/images/vlll.jpg" alt="">
                         <div class="name_job">
-                            <div class="name"><b>Victor Ramirez</b></div>
-                            {{-- {{auth()->user()->name}} --}}
-                            <div class="job">Estudiante</div>
+                            <div class="name"><b>{{auth()->user()->name}}</b></div>
+                            <div class="job">Ocupación</div>
                         </div>
                     </div>
                 </a>

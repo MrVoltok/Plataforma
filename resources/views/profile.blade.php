@@ -9,14 +9,13 @@
     </div>
     <div class="profile-additional-details">
         <div class="profile-mainDetails">
-            <p class="profile-username">Victor Hugo Ramírez López</p>
-            {{-- {{auth()->user()->name}} --}}
-            <p class="profile-job">Estudiante</p>
+            <p class="profile-username">{{auth()->user()->name}}</p>
+            <p class="profile-job">Ocupación</p>
         </div>
         <div class="profile-presentation">
             <p class="titles">Presentación</p>
             <i class='bx bx-edit'></i>
-            <span class="profile-infoBox">Desarrollador Front-end de esta plataforma</span>
+            <span class="profile-infoBox">Ingrese una breve presentación suya</span>
         </div>
         <div class="profile-currentGroups">
             <p class="titles">Mis grupos</p>
