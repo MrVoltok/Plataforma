@@ -28,4 +28,8 @@ class GroupsController extends Controller{
 	    return redirect()->route('groups.index');
 	    
     }
+
+    public function ingroup(){
+        return view('Groups.group');
+    }
 }

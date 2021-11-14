@@ -63,6 +63,10 @@ Route::get('/groups/create-group', [GroupsController::class, 'create'])
 Route::post('/groups/create-group',[GroupsController::class,'store'])
 	->name('groups.store');
 
+Route::get('/groups/group', [GroupsController::class, 'ingroup'])
+    ->middleware('auth')
+    ->name('ingroup.index');
+
 
 // Mensages
 Route::get('/messages',[MessagesController::class,'index'])
