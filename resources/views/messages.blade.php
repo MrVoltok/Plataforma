@@ -12,7 +12,7 @@
             <img src="/images/foto_default.jpg" alt="">
             <div class="chat-miniDetails">
                 <p class="chat-usernameSnd">Equipo 4</p>
-                <p>Ah como shinga</p>
+                <p>Este es un mensaje</p>
             </div>
         </li>
         <li>
