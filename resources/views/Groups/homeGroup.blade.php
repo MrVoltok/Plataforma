@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Grupos')
+
 @section('home')
 <link rel="stylesheet" href="/css/Groups/style_groups.css">
 <!-- Equipos -->
@@ -39,8 +41,8 @@
                 </div>
                 <div class="team-info">
                     <div class="info">
-                        <p>Algoritmos</p>
-                        <p>Grupo de investigación</p>
+                        <p>Equipo 4</p>
+                        <p>Grupo de colaboración</p>
                     </div>
                 </div>
             </a>

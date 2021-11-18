@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Crear grupo')
+
 @section('home')
 <link rel="stylesheet" href="/css/Groups/style_crtgroup.css">
 <link rel="stylesheet" href="/css/Groups/style_groups.css">
@@ -24,9 +26,9 @@
                 <input class="controls" type="text" name="description" id="description" required>
             </div>
             <div class="field">
-                <p class="field-text">Área(s) de estudio</p>
+                <p class="field-text">Ocupación</p>
                 <div class="field-options">
-                    <input class="controls" type="text" name="major" placeholder="Área" id ="major" required>
+                    {{-- <input class="controls" type="text" name="major" placeholder="Área" id ="major" required> --}}
                     <input class="controls" type="text" name="degree" placeholder="Ocupación" id = "degree" required>
                    <!-- <input type="submit" value="Confirmar" required>-->
                 </div>

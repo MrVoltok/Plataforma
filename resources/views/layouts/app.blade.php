@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/app.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -73,7 +73,7 @@
                         <img src="/images/vlll.jpg" alt="">
                         <div class="name_job">
                             <div class="name"><b>{{auth()->user()->name}}</b></div>
-                            <div class="job">Ocupación</div>
+                            <div class="job">{{auth()->user()->job}}</div>
                         </div>
                     </div>
                 </a>
