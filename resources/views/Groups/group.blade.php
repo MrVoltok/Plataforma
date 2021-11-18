@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Grupo')
+
 @section('home')
 <link rel="stylesheet" href="/css/Groups/style_groups.css">
 <link rel="stylesheet" href="/css/Groups/style_group.css">
@@ -15,48 +17,49 @@
         <div class="chat-boxes">
             <li class="received">
                 <p class="user-message"><b>Username</b></p>
-                <p class="text-messageR">Lorem ipsum dolor sit amet.</p>
-                <p class="text-messageR">Lorem ipsum dolor sit amet.</p>
+                <p class="text-messageR">Hola</p>
             </li>
             <li class="sended">
-                <p class="text-message">Lorem ipsum dolor sit amet.</p>
-                <p class="text-message">Lorem ipsum dolor sit amet.</p>
+                <p class="text-message">Hola</p>
+                <p class="text-message">¿Tienes listas las vistas?</p>
             </li>
             <li class="received">
                 <p class="user-message"><b>Username</b></p>
-                <p class="text-messageR">Lorem ipsum dolor sit amet.</p>
-                <p class="text-messageR">Lorem ipsum dolor sit amet.</p>
+                <p class="text-messageR">Ya casi, hay problemas con unos botones pero puede funcionar</p>
             </li>
             <li class="sended">
-                <p class="text-message">Lorem ipsum dolor sit amet.</p>
-                <p class="text-message">Lorem ipsum dolor sit amet.</p>
+                <p class="text-message">Ok</p>
+            </li>
+            <li class="sended">
+                <p class="text-message">En ese caso ya podríamos iniciar con el CRUD</p>
+            </li>
+            <li class="sended">
+                <p class="text-message">Vayan chechando tutoriales para que esto sea rápido, porfa</p>
             </li>
             <li class="received">
                 <p class="user-message"><b>Username</b></p>
-                <p class="text-messageR">Lorem ipsum dolor sit amet.</p>
-                <p class="text-messageR">Lorem ipsum dolor sit amet.</p>
-            </li>
-            <li class="sended">
-                <p class="text-message">Lorem ipsum dolor sit amet.</p>
-                <p class="text-message">Lorem ipsum dolor sit amet.</p>
+                <p class="text-messageR">Va</p>
             </li>
             <li class="received">
                 <p class="user-message"><b>Username</b></p>
-                <p class="text-messageR">Lorem ipsum dolor sit amet.</p>
-                <p class="text-messageR">Lorem ipsum dolor sit amet.</p>
+                <p class="text-messageR">Ok, de paso creamos las tablas para la base de datos</p>
             </li>
             <li class="sended">
-                <p class="text-message">Lorem ipsum dolor sit amet.</p>
-                <p class="text-message">Lorem ipsum dolor sit amet.</p>
+                <p class="text-message">Sí</p>
             </li>
             <li class="received">
                 <p class="user-message"><b>Username</b></p>
-                <p class="text-messageR">Lorem ipsum dolor sit amet.</p>
-                <p class="text-messageR">Lorem ipsum dolor sit amet.</p>
+                <p class="text-messageR">De hecho en la parte de usuarios falta almacenar las imagenes que suba el usuario</p>
             </li>
             <li class="sended">
-                <p class="text-message">Lorem ipsum dolor sit amet.</p>
-                <p class="text-message">Lorem ipsum dolor sit amet.</p>
+                <p class="text-message">¿Falta mucho para eso?</p>
+            </li>
+            <li class="received">
+                <p class="user-message"><b>Username</b></p>
+                <p class="text-messageR">No mucho, lo laborioso es la combinación con el html</p>
+            </li>
+            <li class="sended">
+                <p class="text-message">Ok, entonces nos avisas para que podamos empezar, porfa</p>
             </li>
         </div>
         <div class="text-box">
@@ -66,8 +69,8 @@
     <div class="group-info">
         <img src="/images/img_groups/code-gb630950e3_640.png" alt="">
         <div class="group-info-description">
-            <p id="group-title">Algoritmos</p>
-            <p id="group-description">Grupo enfocado al análisis y diseño de algoritmos.</p>
+            <p id="group-title">Equipo 4</p>
+            <p id="group-description">Grupo encargado para el desarrollo de esta plataforma</p>
         </div>
         <ul id="group-info-listMember">
             <p class="group-info-listMemberTitle">Integrantes</p>

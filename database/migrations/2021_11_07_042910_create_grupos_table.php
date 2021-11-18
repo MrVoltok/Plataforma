@@ -14,11 +14,11 @@ class CreateGruposTable extends Migration
     public function up()
     {
         Schema::create('grupos', function (Blueprint $table) {
-	    $table->id();
+	        $table->id();
      	    $table->string('name');
-	    $table->text('description');
-	    $table->string('major');
-	    $table->string('degree');
+	        $table->text('description');
+	        $table->string('major');
+	        $table->string('degree');
             $table->timestamps();
         });
     }

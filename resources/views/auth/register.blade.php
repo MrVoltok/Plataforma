@@ -8,10 +8,11 @@
         <div class="type-data">
             <input class="controls" type="text" name="name" id="nombres" placeholder="Nombre(s)">
             <input class="controls" type="text" name="lastname" id="apellidos" placeholder="Apellido(s)">
+            <input class="controls" type="text" name="job" id="ocupacion" placeholder="Ocupación">
             <input class="controls" type="email" name="email" id="correo" placeholder="Correo electrónico">
             <input class="controls" type="password" name="password" id="contraseña" placeholder="Contraseña">
             <input class="controls" type="password" name="password_confirmation" id="confirm_contraseña" placeholder="Confirme su Contraseña">
-            @error('password')
+            @error('message')
                 <div class="error_log" id="error_log">
                     {{$message}}
                 </div>
