@@ -15,6 +15,7 @@
             @error('message')
                 <div class="error_log" id="error_log">
                     {{$message}}
+                    Error
                 </div>
             @enderror
             <center><button type="submit" id="register_user">Registrarse</button></center>

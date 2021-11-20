@@ -11,7 +11,7 @@
     display: block;
     position: relative;
     width: 100%;
-    height: 60%;
+    height: auto;
     border: 1px solid #fff;
     padding: 2vh 1vw;
     border-radius: 10px;
@@ -54,8 +54,8 @@
     display: flex;
     position: relative;
     width: 100%;
-    height: 9vh;
-    top: 1vh;
+    padding: 3vh 0;
+    margin: 1vh 0;
     align-items: center;
     justify-content: center;
     font-family: 'Open Sans';
@@ -67,12 +67,10 @@
 
 .type-data #log_user{
     position: relative;
-    top: 6vh;
-    width: 10vw;
-    height: 7vh;
     font-size: 18px;
     font-weight: 700;
-    padding: 5px;
+    padding: 1vh 2vw;
+    margin: 1vh 0;
     border: none;
     border-radius: 5px;
     background: #003a8a;
@@ -81,8 +79,8 @@
 }
 
 .type-data p{
+    margin: 1vh 0;
     position: relative;
-    top: 8vh;
     font-size: 14px;
     font-family: 'Open Sans';
 }

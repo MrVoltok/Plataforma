@@ -23,63 +23,21 @@
         <!-- <i class='bx bx-chevron-down'></i> -->
     </div>
     <ul class="group-boxes">
-        <li class="team">
-            <div class="team-image">
-                <img src="/images/img_groups/brain-g48cd36ed5_640.png" alt="">
-            </div>
-            <div class="team-info">
-                <div class="info">
-                    <p>EEG</p>
-                    <p>Grupo de investigación</p>
-                </div>
-            </div> 
-        </li>
-        <li class="team">
-            <a href="{{route('ingroup.index')}}">
-                <div class="team-image">
-                    <img src="/images/img_groups/code-gb630950e3_640.png" alt="">
-                </div>
-                <div class="team-info">
-                    <div class="info">
-                        <p>Equipo 4</p>
-                        <p>Grupo de colaboración</p>
+        @foreach ($groups as $group)
+            <li class="team">
+                <a href="{{route('ingroup.index')}}">
+                    <div class="team-image">
+                        <img src="/images/img_groups/groupImg-default2.png" alt="">
                     </div>
-                </div>
-            </a>
-        </li>
-        <li class="team">
-            <div class="team-image">
-                <img src="/images/img_groups/naranja.jpg" alt="">
-            </div>
-            <div class="team-info">
-                <div class="info">
-                    <p>HLB</p>
-                    <p>Grupo de investigación</p>
-                </div>
-            </div>
-        </li>
-        <li class="team">
-            <div class="team-image">
-                <img src="/images/img_groups/azteca.png" alt="">
-            </div>
-            <div class="team-info">
-                <div class="info">
-                    <p>Civilizaciones</p>
-                    <p>Grupo de investigación</p>
-                </div>
-            </div>
-        </li>
-        <li class="team">
-            <div class="team-image">
-                <img src="/images/img_groups/corazon.png" alt="">
-            </div>
-            <div class="team-info">
-                <div class="info">
-                    <p>Cardiología</p>
-                    <p>Grupo de investigación</p>
-                </div>
-            </div>
-        </li>
+                    <div class="team-info">
+                        <div class="info">
+                            <p>{{$group->name}}</p>
+                            <p>Grupo de colaboración</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        @endforeach
     </ul>
 </div>  
 @endsection

@@ -1,13 +1,20 @@
 .teams-section{
-    display: flex;
+    display: block;
+    border: 1px solid rebeccapurple;
 }
 
-.teams-section .group-chat{
+.teams-section .group-workspace{
     position: relative;
-    top: 9vh;
+    display: flex;
+    min-height: 90.7vh;
+}
+
+.group-workspace .group-chat{
+    display: block;
+    position: relative;
     border: 1px solid #003a8a;
-    height: calc(100% - 9vh);
-    width: 65%;
+    height: 90.7vh;
+    width: 100%;
 }
 
 .group-chat .chat-boxes{
@@ -21,15 +28,20 @@
     display: block;
     position: relative;
     top: 9vh;
-    width: 19vw;
+    width: auto;
     padding: 1vh 1vw;
 }
 
-.group-info img{
+.group-info .group-info-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-info .group-info-img img{
     position: relative;
     height: 25vh;
     width: 25vh;
-    left: 3vw;
     border-radius: 50%;
     border: 1px solid #c5c5c5;
 }
