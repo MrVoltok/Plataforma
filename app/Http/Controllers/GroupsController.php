@@ -4,10 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\Grupo;
 use Illuminate\Http\Request;
+use PhpParser\Node\Stmt\Echo_;
 
 class GroupsController extends Controller{
     public function index(){
-        return view('Groups.homeGroup');
+        $grupos = Grupo::all();
+        return view('Groups.homeGroup',['groups'=>$grupos]);
     }
 
     public function create(){
@@ -21,10 +23,12 @@ class GroupsController extends Controller{
 
 	    $grupo->name = $request->name;
 	    $grupo->description = $request->description;
-	    $grupo->major = $request->major;
-	    $grupo->degree = $request->degree;
+	    // $grupo->major = $request->major;
+	    // $grupo->degree = $request->degree;
+	    
+        $grupo->save();
 
-	    $grupo->save();
+        Echo "El grupo $grupo->name ha sido creado";
 	    return redirect()->route('groups.index');
 	    
     }
