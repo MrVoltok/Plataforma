@@ -15,7 +15,7 @@
     </div>
     <div class="create-group-section">
         <p>Crear un grupo</p>
-	<form class="create-group-form" action="{{route('groups.store')}} " method ="POST">
+	<form class="create-group-form" action="{{route('groups.store')}} " method ="POST" enctype="multipart/form-data" >
 	    @csrf 
             <div class="field">
                 <p class="field-text">Nombre del grupo</p>
@@ -33,9 +33,12 @@
                    <!-- <input type="submit" value="Confirmar" required>-->
                 </div>
             </div> --}}
-            <!-- <div class="group-image">
-                Subir una imagen
-            </div> -->
+            <div class="group-image">
+                <p>Subir Imagen</p>
+                <input type="file" name="file" id="" accept="image/*">
+		<p><br> </p>
+	     </div>
+
             <div class="confirm-create-group">
                 <input type="submit" value="Crear grupo">
             </div>
