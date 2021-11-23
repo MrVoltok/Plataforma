@@ -17,8 +17,9 @@ class CreateGruposTable extends Migration
 	        $table->id();
      	    $table->string('name');
 	        $table->text('description');
-	        $table->string('major')->nullable();
-	        $table->string('degree')->nullable();
+	       // $table->string('major')->nullable();
+		// $table->string('degree')->nullable();
+		$table->string('image');
             $table->timestamps();
         });
     }

@@ -1,7 +1,7 @@
 @extends('layouts.logs')
 
 @section('login')
-<form class="form-section" method="POST" action="">
+<form class="form-section" method="POST" action="{{route('register.store')}} " enctype="multipart/form-data" >
     @csrf
     <div class="form-register">
         <h4><center>Registro</center></h4>
@@ -12,7 +12,12 @@
             <input class="controls" type="email" name="email" id="correo" placeholder="Correo electrónico">
             <input class="controls" type="password" name="password" id="contraseña" placeholder="Contraseña">
             <input class="controls" type="password" name="password_confirmation" id="confirm_contraseña" placeholder="Confirme su Contraseña">
-            @error('message')
+
+	    <p>Foto de perfil</p>
+            <input type="file" name="image" id="" accept="image/*">
+            <p><br></p>
+
+		 @error('message')
                 <div class="error_log" id="error_log">
                     {{$message}}
                     Error

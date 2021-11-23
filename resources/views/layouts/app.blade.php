@@ -70,7 +70,7 @@
             <div class="profile">
                 <a href="{{route('profilePage.index')}}">
                     <div class="profile_details">
-                        <img src="/images/vlll.jpg" alt="">
+                        <img src="{{auth()->user()->image}}" alt="">
                         <div class="name_job">
                             <div class="name"><b>{{auth()->user()->name}}</b></div>
                             <div class="job">{{auth()->user()->job}}</div>

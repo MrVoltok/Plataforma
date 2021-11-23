@@ -69,14 +69,15 @@
         </div>
         <div class="group-info">
             <div class="group-info-img">
-                <img src="/images/img_groups/code-gb630950e3_640.png" alt="">
+                <img src="{{$team->image}}" alt="">
             </div>
             <div class="group-info-description">
-                <p id="group-title">Equipo 4</p>
-                <p id="group-description">Grupo encargado para el desarrollo de esta plataforma</p>
+                <p id="group-title">{{$team->name}}</p>
+                <p id="group-description">{{$team->description}}</p>
             </div>
             <ul id="group-info-listMember">
-                <p class="group-info-listMemberTitle">Integrantes</p>
+		<p class="group-info-listMemberTitle">Integrantes</p>
+		<!--
                 <li>
                     <p>Iván Juarez</p>
                 </li>
@@ -100,7 +101,8 @@
                 </li>
                 <li>
                     <p>Victor Ramírez</p>
-                </li>
+		</li>
+		-->
             </ul>
         </div>
     </div>

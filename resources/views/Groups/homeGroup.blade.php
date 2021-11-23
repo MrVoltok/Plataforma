@@ -24,18 +24,18 @@
     </div>
     <ul class="group-boxes">
         @foreach ($groups as $group)
-            <li class="team">
-                <a href="{{route('ingroup.index')}}">
-                    <div class="team-image">
-                        <img src="/images/img_groups/groupImg-default2.png" alt="">
+	    <li class="team">
+                <a href="{{route('ingroup.index',['nombre' => $group->name])}}">
+		    <div class="team-image">
+			<img src="{{$group->image}}" alt="">
                     </div>
                     <div class="team-info">
-                        <div class="info">
+			<div class="info">
                             <p>{{$group->name}}</p>
                             <p>Grupo de colaboración</p>
                         </div>
-                    </div>
-                </a>
+		    </div>
+		</a>
             </li>
         @endforeach
     </ul>

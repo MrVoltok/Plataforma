@@ -6,6 +6,9 @@ use App\Models\Grupo;
 use Illuminate\Http\Request;
 use PhpParser\Node\Stmt\Echo_;
 
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\DB;
+
 class GroupsController extends Controller{
     public function index(){
         $grupos = Grupo::all();
@@ -21,11 +24,17 @@ class GroupsController extends Controller{
 	//return $request->all();
 	    $grupo = new Grupo();
 
+	    $request->validate([
+                    'file' => 'required|image'
+            ]);
+
 	    $grupo->name = $request->name;
 	    $grupo->description = $request->description;
 	    // $grupo->major = $request->major;
 	    // $grupo->degree = $request->degree;
-	    
+	    $imagen = $request->file('file')->store('public');
+	    $url = Storage::url($imagen);
+	    $grupo->image = $url;	    
         $grupo->save();
 
         Echo "El grupo $grupo->name ha sido creado";
@@ -33,7 +42,9 @@ class GroupsController extends Controller{
 	    
     }
 
-    public function ingroup(){
-        return view('Groups.group');
+    public function ingroup($nombre)
+    {
+	$grupo = DB::table('grupos')->where('name',$nombre)->first();
+        return view('Groups.group',['team' => $grupo]);
     }
 }
