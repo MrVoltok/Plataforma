@@ -36,7 +36,7 @@
                 </a>
             </li>
             <li>
-                <a href="convocatorias.html">
+                <a href="{{route('announcement.index')}}">
                     <i class='bx bxs-megaphone' ></i>
                     <span class="links_name">Convocatorias</span>
                 </a>
