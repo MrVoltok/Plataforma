@@ -68,7 +68,11 @@ Route::get('/groups/group/{nombre}', [GroupsController::class, 'ingroup'])
     ->name('ingroup.index');
 
 
-// Mensages
+// Mensajes
 Route::get('/messages',[MessagesController::class,'index'])
     ->middleware('auth')
     ->name('messages.index');
+
+Route::post('/messages/send-message',[MessagesController::class,'eventMessage'])
+    ->middleware('auth')
+    ->name('messages.event');
