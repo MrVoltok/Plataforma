@@ -6,6 +6,8 @@ use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\GroupsController;
 use App\Http\Controllers\MessagesController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AnnouncementController;
+use Illuminate\View\AnonymousComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -76,3 +78,13 @@ Route::get('/messages',[MessagesController::class,'index'])
 Route::post('/messages/send-message',[MessagesController::class,'eventMessage'])
     ->middleware('auth')
     ->name('messages.event');
+
+
+//Convocatorias
+Route::get('/annoucement',[AnnouncementController::class,'index'])
+    ->middleware('auth')
+    ->name('announcement.index');
+
+Route::get('/annoucement/create',[AnnouncementController::class,'create'])
+    ->middleware('auth')
+    ->name('announcement.create');

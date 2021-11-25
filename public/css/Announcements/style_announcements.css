@@ -1,0 +1,140 @@
+.announce{
+    position: absolute;
+    width: calc(100% - 217px);
+    height: calc(100% - 9vh);
+    left: 217px;
+    display: flex;
+}
+
+.announce .banner-announce{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 9vh;
+    padding: 10px 15px;
+    text-align: left;
+    align-items: center;
+    background: #003a8a;
+    border-left: 1px solid #142c4d;
+    border-bottom: 2px solid #142c4d;
+}
+
+.announce .banner-text{
+    width: 70%;
+    font-size: 25px;
+    font-family: 'Open sans';
+    color: #fff;
+}
+
+.announce .create-announce{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 4vw;
+    width: 4vw;
+    height: 5vh;
+    padding: 7px 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background: #002c69;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.announce .create-announce:hover{
+    color: #002c69;
+    background: #fff;
+}
+
+.announce .bxs-megaphone{
+    position: relative;
+    left: 5px;
+}
+
+.announce .bx-plus{
+    position: relative;
+    left: 3px;
+    width: 100%;
+}
+
+.announce .notification{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 78vw;
+    height: 5vh;
+    width: 3vw;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background: #002c69;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.announce .notification:hover{
+    color: #002c69;
+    background: #fff;
+}
+
+.announce .section-announce{
+    position: absolute;
+    top: 9vh;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.announce .list-announce{
+    width: 55%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.announce .list-announce li{
+    display: flex;
+    position: relative;
+    height: 90px;
+    padding: 5px;
+    border-bottom: 1px solid #142c4d;
+}
+
+.list-announce li img{
+    border-radius: 12px;
+}
+
+.list-announce li .info{
+    border: 1px solid red;
+    margin-left: 1vw;
+    width: 100%;
+}
+
+.announce .list-announce li:hover{
+    color: #fff;
+    background: #142c4d;
+    cursor: pointer;
+}
+
+
+.announce .description{
+    position: relative;
+    top: 9vh;
+    left: 55%;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    border: 1px solid red;
+}
+
+.sidebar.active ~ .announce{
+    width: 83.1%;
+    left: 240px;
+}
+
+.sidebar.active ~ .announce .list-announce{
+    width: 65%;
+} 

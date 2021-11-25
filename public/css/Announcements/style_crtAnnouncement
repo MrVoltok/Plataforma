@@ -1,0 +1,76 @@
+.crtConv{
+    position: absolute;
+    left: 217px;
+    border: 1px solid red;
+    width: calc(100% - 217px);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-crtConv{
+    display: block;
+    width: 40vw;
+    padding: 1vh 1vw;
+    border-radius: 6px;
+    border: 1px solid #c2c2c2;
+    box-shadow: 2px -2px 5px #c5c5c5;
+}
+
+.form-crtConv .crtConv-data{
+    font-weight: 600;
+    margin: 1vh 0;
+}
+
+.form-crtConv #crtConv-h{
+    font-size: 28px;
+    margin-bottom: 1vh;
+}
+
+.form-crtConv #crtConv-Name{
+    font-size: 24px;
+}
+
+.form-crtConv #crtConv-Description{
+    font-size: 18px;
+}
+
+.form-crtConv .controls{
+    height: 5.5vh;
+    margin-bottom: 1vh;
+    width: 100%;
+    padding: 0 1vw;
+    font-size: 14px;
+}
+
+.form-crtConv .controls:focus{
+    border: 1px solid #003a8a;
+}
+
+.form-crtConv .crtConv-Decision{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 1vh;
+}
+
+.form-crtConv button{
+    position: relative;
+    padding: 1vh 1vw;
+    margin: 0 1vw;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#btn-Accept{
+    background: #003a8a;
+}
+
+#btn-Cancel{
+    background: #cc1209;
+}
