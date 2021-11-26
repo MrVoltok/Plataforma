@@ -1,6 +1,8 @@
 @extends('layouts.logs')
 
-@section('login')
+@section('title', 'Login')
+
+@section('log')
 <form class="form-log-section" method="POST" action="">
     @csrf
     <div class="form-login">

@@ -35,3 +35,15 @@ body{
     width: 70%;
     border-radius: 20%;
 }
+
+@media(max-width:947px){
+
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left{
+        display: none;
+    }
+}

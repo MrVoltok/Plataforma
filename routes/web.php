@@ -22,7 +22,7 @@ use Illuminate\View\AnonymousComponent;
 
 // PAGINA PRINCIPAL
 Route::get('/', function () {
-    return view('home');
+    return redirect()->route('groups.index');
 })->middleware('auth')
   ->name('homepage');
 

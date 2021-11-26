@@ -1,6 +1,8 @@
 @extends('layouts.logs')
 
-@section('login')
+@section('title', 'Register')
+
+@section('log')
 <form class="form-section" method="POST" action="{{route('register.store')}} " enctype="multipart/form-data" >
     @csrf
     <div class="form-register">

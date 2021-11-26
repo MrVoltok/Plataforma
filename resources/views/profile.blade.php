@@ -12,7 +12,7 @@
 <div class="profile-section">
     <div class="profile-banner">
         <div class="banner-img">
-            <img src="/images/vlll.jpg" alt="">
+            <img src="{{auth()->user()->image}}" alt="">
             <i class='bx bxs-image-add' id="change_profileImg"></i>
         </div>
         <div class="icon">

@@ -7,22 +7,19 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/style_sidebar.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/d0a7c18939.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="sidebar">
         <div class="logo_content">
             <div class="logo">
-                <i class='bx bx-group'></i>
                 <a href="{{route('homepage')}}">
+                    <i class='bx bx-group'></i>
                     <div class="logo_name">Plataforma</div>
                 </a>
             </div>
         </div>
         <ul class="nav_list">
-            <li>
-                <i class='bx bx-search'></i>
-                <input type="text" placeholder="Buscar...">
-            </li>
             <li>
                 <a href="{{route('groups.index')}}">
                     <i class='bx bxs-group'></i>
