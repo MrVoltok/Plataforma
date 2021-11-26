@@ -3,7 +3,7 @@
     position: absolute;
     height: 100%;
     width: 23vw;
-    left: 16vw;
+    left: 217px;
 }
 
 .chat-section .chatlist-banner{
@@ -78,8 +78,8 @@
 .chat-area{
     position: absolute;
     height: 100%;
-    width: 61vw;
-    left: 39vw;
+    width: calc(100% - 530px);
+    left: 530px
 }
 
 .chat-area .chat-profileBanner{
@@ -216,4 +216,33 @@
 .chat-area input[type="text"]:focus{
     border: 1px solid #969696;
     outline: none;
+}
+
+/* responsive design for chats */
+@media(max-width: 600px){
+    .chat-section{
+        display: none;
+    }
+
+    .chat-area{
+        position: absolute;
+        left: 109px;
+        width: calc(100% - 109px);
+    }
+
+    .chat-area .chat-profileBanner{
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
+
+    .chat-area .chat-profileBanner img{
+        display: none;
+    }
+
+    .text-box{
+        position: absolute;
+        height: 60px;
+        bottom: 0;
+    }
 }

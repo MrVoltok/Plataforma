@@ -69,3 +69,21 @@
     position: relative;
     font-size: 14px;
 }
+
+/* Responsive register view */
+@media(max-width:947px){
+
+    .form-section{
+        width: 768px;
+        display: flex;
+    }
+}
+
+/* Responsive register view */
+@media(max-width:600px){
+
+    .form-section{
+        width: 500px;
+        display: flex;
+    }
+}

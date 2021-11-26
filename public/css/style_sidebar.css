@@ -30,6 +30,8 @@
     height: 50px;
     width: 100%;
     align-items: center;
+    justify-content: center;
+    text-decoration: none;
   }
   
   .logo_content .logo i{
@@ -223,3 +225,56 @@
     color: #1d1b31;
     margin-top: 12px;
   }
+
+  @media(max-width: 600px){
+    .sidebar{
+        display: block;
+        width: 109px;
+        bottom: 0;
+    }
+
+    .sidebar .logo_content .logo a{
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .sidebar .logo_content .logo .logo_name{
+      display: none;
+    }
+
+    .sidebar .logo_content .logo{
+       display: flex;
+       justify-content: center;
+    }
+
+    .logo_content .logo i{
+        position: relative;
+        left: 9px;
+    }
+
+    .nav_list li a{
+        display: flex;
+        justify-content: center;
+        margin: 1vh 0;
+    }
+
+    .nav_list li a span{
+        display: none;
+    }
+
+    .profile_content .name_job{
+        display: none;
+    }
+
+    .profile #log_out{
+        color: #fff;
+        text-decoration: none;
+        position: absolute;
+        left: 75%;
+        min-width: 40px;
+        line-height: 43px;
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+}

@@ -84,3 +84,20 @@
     font-size: 14px;
     font-family: 'Open Sans';
 }
+
+/* Responsive register view */
+@media(max-width:947px){
+
+    .form-log-section{
+        width: 768px;
+        display: flex;
+    }
+}
+
+@media(max-width:600px){
+
+    .form-log-section{
+        width: 500px;
+        display: flex;
+    }
+}

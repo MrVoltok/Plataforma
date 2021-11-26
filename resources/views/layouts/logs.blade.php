@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="/css/logs/style_log.css">
     <link rel="stylesheet" href="/css/logs/style_register.css">
     <link rel="stylesheet" href="/css/logs/style_login.css">
-
-    <title>Document</title>
+    <title>@yield('title')</title>
 </head>
 <body>
     <div class="left">
@@ -17,7 +16,7 @@
         </div>
     </div>
 
-    @yield('login')
+    @yield('log')
 
 </body>
 </html>
