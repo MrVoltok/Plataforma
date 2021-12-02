@@ -5,9 +5,11 @@
 @section('log')
 <form class="form-log-section" method="POST" action="">
     @csrf
+    {{-- Formulario de inicio de sesion --}}
     <div class="form-login">
         <h4><center>Iniciar sesión</center></h4>
         <div class="type-data">
+            {{-- input --}}
             <input class="controls" type="email" name="email" id="correo" placeholder="Correo electrónico">
             <input class="controls" type="password" name="password" id="contraseña" placeholder="Contraseña">
             @error('message')
@@ -15,6 +17,7 @@
                     Correo o contraseña incorrectos
                 </div>
             @enderror
+            {{-- boton --}}
             <center>
                 <button type="submit" id="log_user">Iniciar sesión</button>
             </center>

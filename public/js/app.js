@@ -2066,8 +2066,10 @@ var messages_el = document.getElementById("chat-boxes");
 var username_input = document.getElementById("username_input");
 var message_input = document.getElementById("message_input");
 var message_form = document.getElementById("message_form");
+var user_img = document.getElementById("user-img");
 message_form.addEventListener('submit', function (e) {
   e.preventDefault();
+  var image = user_img.value;
   var has_errors = false;
 
   if (username_input.value == '') {
@@ -2093,7 +2095,7 @@ message_form.addEventListener('submit', function (e) {
   axios(options);
 });
 window.Echo.channel('chat').listen('.message', function (e) {
-  if (username_input.value == "{{auth()->user()->name}}") messages_el.innerHTML += '<li class="sended"><p class="text-message">' + e.message + '</p></li>';else messages_el.innerHTML += '<li class="received"><p class="user-message"><b>' + e.username + '</b></p><p class="text-messageR">' + e.message + '</p></li>';
+  if (username_input.value == "{{auth()->user()->name}}") messages_el.innerHTML += '<li class="sended"><p class="text-message">' + e.message + '</p></li>';else messages_el.innerHTML += '<li class="received"><img src"' + user_img + '"></img> <div class="text"><p class="user-message"><b>' + e.username + '</b></p><p class="text-messageR">' + e.message + '</p></div></li>';
   message_input.value = '';
 });
 

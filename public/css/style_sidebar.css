@@ -24,29 +24,37 @@
     border-right: 1px solid #142c4d;
   }
   
+  /* Logo */
+  .sidebar .logo_content {
+    display: flex;
+  }
+
   .sidebar .logo_content .logo{
     color: #fff;
     display: flex;
     height: 50px;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 20px;
     text-decoration: none;
   }
   
   .logo_content .logo i{
     font-size: 28px;
+    color: #fff;
     margin-right: 5px;
   }
   
   .logo_content .logo .logo_name{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: #fff;
   }
   
   .logo_content .logo a{
     text-decoration: none;
+    display: flex;
   }
   
   .sidebar #btn{
@@ -67,6 +75,7 @@
     left: 90%;
   }
   
+  /* Navegacion */
   .sidebar ul{
     margin-top: 20px;
   }
@@ -148,6 +157,7 @@
     pointer-events: none;
   }
   
+  /* Detalles del perfil */
   .sidebar .profile_content{
     position: absolute;
     color: #fff;
@@ -234,8 +244,10 @@
     }
 
     .sidebar .logo_content .logo a{
+      position: absolute;
       text-decoration: none;
       color: #fff;
+      left: 35px;
     }
 
     .sidebar .logo_content .logo .logo_name{

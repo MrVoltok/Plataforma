@@ -5,8 +5,10 @@
 @section('log')
 <form class="form-section" method="POST" action="{{route('register.store')}} " enctype="multipart/form-data" >
     @csrf
+    {{-- formulario de registro de usuario --}}
     <div class="form-register">
         <h4><center>Registro</center></h4>
+        {{-- input --}}
         <div class="type-data">
             <input class="controls" type="text" name="name" id="nombres" placeholder="Nombre(s)">
             <input class="controls" type="text" name="lastname" id="apellidos" placeholder="Apellido(s)">
@@ -25,6 +27,7 @@
                     Error
                 </div>
             @enderror
+            {{-- boton --}}
             <center><button type="submit" id="register_user">Registrarse</button></center>
             <center><p class="to_log"><a href="{{route('login.index')}}">Ya tengo una cuenta</a></p></center>
       </div>

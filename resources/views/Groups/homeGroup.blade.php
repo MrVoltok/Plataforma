@@ -22,21 +22,22 @@
         <p class="personal-groupsT">Mis grupos</p>
         <!-- <i class='bx bx-chevron-down'></i> -->
     </div>
+    {{-- lista de grupos --}}
     <ul class="group-boxes">
         @foreach ($groups as $group)
 	    <li class="team">
-                <a href="{{route('ingroup.index',['nombre' => $group->name])}}">
+            <a href="{{route('ingroup.index',['nombre' => $group->name])}}">
 		    <div class="team-image">
-			<img src="{{$group->image}}" alt="">
-                    </div>
-                    <div class="team-info">
-			<div class="info">
-                            <p>{{$group->name}}</p>
-                            <p>Grupo de colaboración</p>
-                        </div>
+			    <img src="{{$group->image}}" alt="">
+            </div>
+            <div class="team-info">
+			    <div class="info">
+                    <p>{{$group->name}}</p>
+                    <p>Grupo de colaboración</p>
+                </div>
 		    </div>
-		</a>
-            </li>
+		    </a>
+        </li>
         @endforeach
     </ul>
 </div>  
