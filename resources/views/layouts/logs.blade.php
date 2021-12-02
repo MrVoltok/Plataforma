@@ -10,6 +10,7 @@
     <title>@yield('title')</title>
 </head>
 <body>
+    {{-- Imagen o logo --}}
     <div class="left">
         <div class="image">
           <img src="/images/img_log.jpg" alt="">

@@ -69,7 +69,7 @@
     padding: 1vh 1vw;
 }
 
-
+/* seccion de datos del usuario */
 .profile-mainDetails p{
     position: relative;
     display: flex;
@@ -123,12 +123,16 @@
     font-size: 15px;
 }
 
+
+/* Presentacion del usuario */
 .profile-additional-details .profile-presentation span{
     position: relative;
     display: block;
     top: 1vh;
 }
 
+
+/* Grupos en el que pertenece el usuario */
 .profile-additional-details .profile-currentGroups{
     padding: 2vh 1vw;
     height: auto;
@@ -160,6 +164,7 @@
         display: flex;
         align-items: center;
         justify-content: center;   
+        border: 1px solid yellow;
     }
 
     .profile-banner .banner-img i{

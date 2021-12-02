@@ -10,7 +10,9 @@
     <script src="https://kit.fontawesome.com/d0a7c18939.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    {{-- Sidebar --}}
     <div class="sidebar">
+        {{-- Logo --}}
         <div class="logo_content">
             <div class="logo">
                 <a href="{{route('homepage')}}">
@@ -19,6 +21,7 @@
                 </a>
             </div>
         </div>
+        {{-- Navegacion --}}
         <ul class="nav_list">
             <li>
                 <a href="{{route('groups.index')}}">
@@ -63,6 +66,7 @@
                 </a>
             </li>
         </ul>
+        {{-- Seccion de datos del usuario --}}
         <div class="profile_content">
             <div class="profile">
                 <a href="{{route('profilePage.index')}}">

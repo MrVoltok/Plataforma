@@ -10,17 +10,28 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\DB;
 
 class GroupsController extends Controller{
+    
+    /**
+     * @return view Retorna la vista al listado de grupos
+     */
     public function index(){
         $grupos = Grupo::all();
         return view('Groups.homeGroup',['groups'=>$grupos]);
     }
 
+    /**
+     * @return view Retorna la vista al formulario de creación de grupo
+     */
     public function create(){
         return view('Groups.createGroup');
     }
 
-    public function store(Request $request)//Creamos un objeto de tipo Request que almacena la info que se obtiene de post en una variable
-    {
+    /**
+     * Almacena los datos ingresados al formulario de creación de grupo
+     * @param \Illuminate\Http\Request  $request
+     * @return view Retorna la vista al espacio de trabajo del grupo creado
+     */
+    public function store(Request $request){
 	//return $request->all();
 	    $grupo = new Grupo();
 
@@ -42,9 +53,11 @@ class GroupsController extends Controller{
 	    
     }
 
-    public function ingroup($nombre)
-    {
-	$grupo = DB::table('grupos')->where('name',$nombre)->first();
+    /**
+     * @return view Retorna la vista al espacio de trabajo del grupo seleccionado
+     */
+    public function ingroup($nombre){
+	    $grupo = DB::table('grupos')->where('name',$nombre)->first();
         return view('Groups.group',['team' => $grupo]);
     }
 }

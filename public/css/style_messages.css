@@ -132,14 +132,25 @@
     position: relative;
     padding: 1vh 1vw;
     height: auto;
-    width: 25vw;
+    width: auto;
     border-radius: 6px 6px 6px 0;
     background: #142c4d;
+    display: flex;
+}
+
+.chat-boxes .received img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 2px;
+    background: #fff;
+    margin-right: 1vw;
 }
 
 .chat-boxes .user-message{
     font-size: 15px;
     font-weight: 400;
+    margin-bottom: 1vh;
     color: #fff;
 }
 

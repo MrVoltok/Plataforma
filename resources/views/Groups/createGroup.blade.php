@@ -17,6 +17,7 @@
         <p>Crear un grupo</p>
 	<form class="create-group-form" action="{{route('groups.store')}} " method ="POST" enctype="multipart/form-data" >
 	    @csrf 
+            {{-- Input --}}
             <div class="field">
                 <p class="field-text">Nombre del grupo</p>
                 <input class="controls" type="text" name="name" id="name" required>
@@ -39,6 +40,7 @@
 		<p><br> </p>
 	     </div>
 
+            {{-- boton --}}
             <div class="confirm-create-group">
                 <input type="submit" value="Crear grupo">
             </div>

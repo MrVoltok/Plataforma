@@ -1,3 +1,4 @@
+/* formulario de inicio de sesion */
 .form-log-section{
     display: flex;
     align-items: center;
@@ -25,6 +26,7 @@
     font-weight: 550;
 }
 
+/* inputs */
 .form-log-section .form-login .type-data{
     position: relative;
     display: block;
@@ -50,6 +52,7 @@
     font-family: sans-serif;
 }
 
+/* mensaje de error */
 .type-data .error_log{
     display: flex;
     position: relative;
@@ -65,6 +68,7 @@
     border: 1px solid #d62915;
 }
 
+/* boton */
 .type-data #log_user{
     position: relative;
     font-size: 18px;
